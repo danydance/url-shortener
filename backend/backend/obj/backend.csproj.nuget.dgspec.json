@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "W:\\In&Out\\URL Shortener\\url-shortener\\backend\\backend\\backend.csproj": {}
+    "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\backend.csproj": {}
   },
   "projects": {
-    "W:\\In&Out\\URL Shortener\\url-shortener\\backend\\backend\\backend.csproj": {
+    "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "W:\\In&Out\\URL Shortener\\url-shortener\\backend\\backend\\backend.csproj",
+        "projectUniqueName": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\backend.csproj",
         "projectName": "backend",
-        "projectPath": "W:\\In&Out\\URL Shortener\\url-shortener\\backend\\backend\\backend.csproj",
+        "projectPath": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\backend.csproj",
         "packagesPath": "C:\\Users\\dbeck\\.nuget\\packages\\",
-        "outputPath": "W:\\In&Out\\URL Shortener\\url-shortener\\backend\\backend\\obj\\",
+        "outputPath": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dbeck\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,6 +48,18 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[9.0.6, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
