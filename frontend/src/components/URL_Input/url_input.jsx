@@ -18,7 +18,7 @@ function UrlInput() {
         <>
         <form onSubmit={handleSubmit}>
             <div className="segment">
-            <h1>URL Shortener</h1>
+            <h1>URL Sortener</h1>
             </div>
 
             <label>
