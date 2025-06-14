@@ -5,8 +5,6 @@ import './App.css'
 import UrlInput from './components/URL_Input/url_input'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <UrlInput />

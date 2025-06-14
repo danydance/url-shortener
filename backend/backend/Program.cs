@@ -16,7 +16,26 @@ builder.Services.AddDbContext<UrlsDB>(o => o.UseSqlServer(builder.Configuration.
 
 builder.Services.AddScoped<UrlShortningService>();
 
+// Allows React app to communicate
+builder.Services.AddControllers();
+builder.Services.AddAuthorization();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp",
+        policy => policy
+            .WithOrigins("http://localhost:5000") 
+            .AllowAnyHeader()
+            .AllowAnyMethod());
+});
+
+
+
 var app = builder.Build();
+
+app.UseCors("AllowReactApp"); // allows React app
+
+app.UseAuthorization();
+app.MapControllers();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -26,6 +45,7 @@ if (app.Environment.IsDevelopment())
 
     app.ApplyMigrations();
 }
+
 
 app.MapPost("api/shorten", async (
     ShortenUrlRequest request,
@@ -38,23 +58,39 @@ app.MapPost("api/shorten", async (
         return Results.BadRequest("This URL is invalid.");
     }
 
-    var code = await urlShorteningService.GenerateUniqCode();
+    var code = await urlShorteningService.GetOrCreateCodeForUrl(request.Url);
 
-    var shortenedUrl = new ShortenedUrl
+    var existing = await dbContext.ShortenedUrls.FirstOrDefaultAsync(s => s.Code == code);
+
+    if (existing == null)
     {
-        Id = Guid.NewGuid(),
-        LongUrl = request.Url,
-        Code = code,
-        ShortUrl = $"{httpContext.Request.Scheme}://{httpContext.Request.Host}/api/{code}",
-        UTCTime = DateTime.Now
-    };
+        var shortenedUrl = new ShortenedUrl
+        {
+            Id = Guid.NewGuid(),
+            LongUrl = request.Url,
+            Code = code,
+            ShortUrl = $"{httpContext.Request.Scheme}://{httpContext.Request.Host}/api/{code}",
+            UTCTime = DateTime.Now
+        };
+        dbContext.ShortenedUrls.Add(shortenedUrl);
+        await dbContext.SaveChangesAsync();
 
-    dbContext.ShortenedUrls.Add(shortenedUrl);
+        return Results.Ok(shortenedUrl.ShortUrl);
+    }
 
-    await dbContext.SaveChangesAsync();
-
-    return Results.Ok(shortenedUrl.ShortUrl);
+    return Results.Ok(existing.ShortUrl);
     
+});
+
+app.MapGet("api/{code}", async (string code, UrlsDB dbContext) =>
+{
+    var shortenedUrl = await dbContext.ShortenedUrls.FirstOrDefaultAsync(s => s.Code == code);
+
+    if (shortenedUrl is null)
+    {
+        return Results.NotFound();
+    }
+    return Results.Redirect(shortenedUrl.LongUrl);
 });
 
 app.UseHttpsRedirection();

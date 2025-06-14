@@ -54,11 +54,6 @@ W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\backend
 W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\backend.sourcelink.json
 W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\staticwebassets.build.json
 W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\staticwebassets.development.json
-W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\staticwebassets\msbuild.backend.Microsoft.AspNetCore.StaticWebAssets.props
-W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\staticwebassets\msbuild.build.backend.props
-W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.backend.props
-W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.backend.props
-W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\staticwebassets.pack.json
 W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\scopedcss\bundle\backend.styles.css
 W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\backend.csproj.Up2Date
 W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\backend.dll
@@ -202,3 +197,8 @@ W:\InAndOut\URL Shortener\url-shortener\backend\backend\bin\Debug\net8.0\runtime
 W:\InAndOut\URL Shortener\url-shortener\backend\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 W:\InAndOut\URL Shortener\url-shortener\backend\backend\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 W:\InAndOut\URL Shortener\url-shortener\backend\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\staticwebassets\msbuild.backend.Microsoft.AspNetCore.StaticWebAssets.props
+W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\staticwebassets\msbuild.build.backend.props
+W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.backend.props
+W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.backend.props
+W:\InAndOut\URL Shortener\url-shortener\backend\backend\obj\Debug\net8.0\staticwebassets.pack.json

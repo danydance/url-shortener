@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './url_input.scss'
+import APIHandler from '../ApiHandler/api_handler'
+
 
 function DisplayUrl({ url }) {
     if (!url) return null
@@ -18,7 +20,7 @@ function UrlInput() {
         <>
         <form onSubmit={handleSubmit}>
             <div className="segment">
-            <h1>URL Sortener</h1>
+            <h1>URL Shortener</h1>
             </div>
 
             <label>
@@ -35,8 +37,8 @@ function UrlInput() {
                 Submit
             </button>
         </form>
-        <DisplayUrl url={submittedUrl} />
-        </>
+        <APIHandler url={submittedUrl} />
+        </>  
   )
 }
 
