@@ -33,9 +33,11 @@ function UrlInput() {
                 required 
             />
             </label>
-            <button className="red" type="submit">
-                Submit
-            </button>
+            <div>
+                <button className="red" type="submit">
+                    Submit
+                </button>
+            </div>
         </form>
         <APIHandler url={submittedUrl} />
         </>  

@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<UrlsDB>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("Database")));
+builder.Services.AddDbContext<UrlsDB>(o => o.UseSqlite(builder.Configuration.GetConnectionString("Database")));
 
 builder.Services.AddScoped<UrlShortningService>();
 
