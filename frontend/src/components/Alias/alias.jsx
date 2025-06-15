@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import send_alias_to_api from '../../api/send_alias_to_api'
+import send_to_api from '../../api/send_to_api'
 
 function Alias() {
     const [url, setUrl] = useState("")
@@ -14,7 +14,7 @@ function Alias() {
         setShortUrl("")
 
         try {
-            const result = await send_alias_to_api(url, alias)
+            const result = await send_to_api(url, alias)
             setShortUrl(result)
         } catch (err) {
             setError(err.message)
