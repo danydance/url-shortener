@@ -1,4 +1,11 @@
 @use "sass:math";
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
 $ruler: 16px;
 $color-bg: #c8cad4;
 $color-shadow: #333436;
@@ -29,6 +36,14 @@ form {
 .segment {
   padding: $ruler*2 0;
   text-align: center;
+}
+
+.forms-container {
+  display: flex;
+  gap: $ruler * 2; // space between forms
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; // optional: allows wrapping on smaller screens
 }
 
 button, input {

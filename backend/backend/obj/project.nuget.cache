@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BTiYh6ctBMw=",
+  "dgSpecHash": "9QXyjbG05yMxsTNZdRQjt2Qpmx9kSiqmg+KD++4MtXguISBE0q2EWRaCwHPVcuZIyE9ibiH2y+n7shvVVimk9g==",
   "success": true,
   "projectFilePath": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\backend.csproj",
   "expectedPackageFiles": [
@@ -96,11 +96,7 @@
     "C:\\Users\\dbeck\\.nuget\\packages\\system.text.json\\9.0.6\\system.text.json.9.0.6.nupkg.sha512",
     "C:\\Users\\dbeck\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\dbeck\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\dbeck\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\dbeck\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.17\\microsoft.netcore.app.ref.8.0.17.nupkg.sha512",
-    "C:\\Users\\dbeck\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.17\\microsoft.windowsdesktop.app.ref.8.0.17.nupkg.sha512",
-    "C:\\Users\\dbeck\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.17\\microsoft.aspnetcore.app.ref.8.0.17.nupkg.sha512",
-    "C:\\Users\\dbeck\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.17\\microsoft.netcore.app.host.win-x64.8.0.17.nupkg.sha512"
+    "C:\\Users\\dbeck\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

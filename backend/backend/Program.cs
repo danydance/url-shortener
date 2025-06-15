@@ -19,6 +19,7 @@ builder.Services.AddScoped<UrlShortningService>();
 // Allows React app to communicate
 builder.Services.AddControllers();
 builder.Services.AddAuthorization();
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
@@ -43,7 +44,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 
-    app.ApplyMigrations();
+    app.ApplyMigrations(); // This automatically applies migrations on startup and creates the database if it doesn't exist
 }
 
 
@@ -92,6 +93,63 @@ app.MapGet("api/{code}", async (string code, UrlsDB dbContext) =>
     }
     return Results.Redirect(shortenedUrl.LongUrl);
 });
+
+app.MapPost("api/alias", async (
+    AliasRequest request,
+    UrlsDB dbContext,
+    HttpContext httpContext) =>
+{
+    // Checks if the provided URL is valid
+    if (!Uri.TryCreate(request.Url, UriKind.Absolute, out _)) 
+    {
+        return Results.BadRequest("This URL is invalid.");
+    }
+
+    // Check if this long URL already exists
+    var existingByUrl = await dbContext.ShortenedUrls.FirstOrDefaultAsync(s => s.LongUrl == request.Url);
+    if (existingByUrl != null)
+    {
+        // If exists then update the alias of the same URL
+        if (existingByUrl.Code != request.Alias)
+        {
+            // Checks if the alias is taken and that it is not the same URL
+            var aliasTaken = await dbContext.ShortenedUrls.AnyAsync(s => s.Code == request.Alias && s.LongUrl != request.Url);
+            if (aliasTaken)
+            {
+                return Results.BadRequest("Alias is already taken.");
+            }
+
+            existingByUrl.Code = request.Alias;
+            existingByUrl.ShortUrl = $"{httpContext.Request.Scheme}://{httpContext.Request.Host}/api/{request.Alias}";
+            await dbContext.SaveChangesAsync();
+        }
+        return Results.Ok(existingByUrl.ShortUrl);
+    }
+
+    // Checks if alias already exists
+    var aliasExists = await dbContext.ShortenedUrls.AnyAsync(s => s.Code == request.Alias);
+    if (aliasExists)
+    {
+        return Results.BadRequest("Alias is already taken.");
+    }
+
+    // Creates new URL with alias
+    var shortenedUrl = new ShortenedUrl
+    {
+        Id = Guid.NewGuid(),
+        LongUrl = request.Url,
+        Code = request.Alias,
+        ShortUrl = $"{httpContext.Request.Scheme}://{httpContext.Request.Host}/api/{request.Alias}",
+        UTCTime = DateTime.UtcNow
+    };
+
+    dbContext.ShortenedUrls.Add(shortenedUrl);
+    await dbContext.SaveChangesAsync();
+
+    return Results.Ok(shortenedUrl.ShortUrl);
+});
+
+
 
 app.UseHttpsRedirection();
 

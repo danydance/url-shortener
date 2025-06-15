@@ -13,7 +13,7 @@ namespace Web.Api.Extensions
 
             var dbContext = scope.ServiceProvider.GetRequiredService<UrlsDB>();
 
-            dbContext.Database.Migrate();
+            dbContext.Database.Migrate(); // Ensures database creation and migration (abilities)
         }
     }
 }
