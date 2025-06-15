@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import './url_input.scss';
 import send_to_api from '../../api/send_to_api'; 
 
-function UrlInput() {
+function UrlShortener() {
     const [url, setUrl] = useState('');
     const [shortUrl, setShortUrl] = useState(null);
     const [error, setError] = useState(null);
@@ -68,4 +67,4 @@ function UrlInput() {
     );
 }
 
-export default UrlInput;
+export default UrlShortener;

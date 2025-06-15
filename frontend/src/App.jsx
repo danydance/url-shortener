@@ -1,8 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.scss'
-import UrlInput from './components/URL_Input/url_input'
+import URLShortener from './components/URL_Shortener/url_shortener'
 import ALIAS from './components/Alias/alias'
 
 function App() {
@@ -38,7 +36,7 @@ function App() {
         </h2>
       </div>
 
-      {activeTab === "shortener" ? <UrlInput /> : <ALIAS />}
+      {activeTab === "shortener" ? <URLShortener /> : <ALIAS />}
     </div>
   );
 }
