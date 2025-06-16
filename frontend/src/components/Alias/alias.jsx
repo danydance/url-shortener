@@ -2,12 +2,16 @@ import { useState } from 'react'
 import send_to_api from '../../api/send_to_api'
 
 function Alias() {
-    const [url, setUrl] = useState("")
-    const [alias, setAlias] = useState("")
-    const [shortUrl, setShortUrl] = useState("")
-    const [error, setError] = useState("")
-    const [isCopied, setIsCopied] = useState(false)
+    // State to store user input
+    const [url, setUrl] = useState("") // LongURL
+    const [alias, setAlias] = useState("") // ALIAS
 
+    // State to store output or error
+    const [shortUrl, setShortUrl] = useState("") // ShortURL
+    const [error, setError] = useState("") // Error message
+    const [isCopied, setIsCopied] = useState(false) // Copy Result
+
+    // Submit handler sends URL + ALIAS to API
     const handleSubmit = async (e) => {
         e.preventDefault()
         setError("")
@@ -21,6 +25,7 @@ function Alias() {
         }
     }
 
+    // Copies ShortURL to clipboard
     const handleCopy = () => {
         if (!shortUrl) return
         navigator.clipboard.writeText(shortUrl).then(() => {
@@ -35,7 +40,7 @@ function Alias() {
                 <div className="segment">
                     <h1>Alias</h1>
                 </div>
-
+                {/* URL and ALIAS input fields */}
                 <label>
                     <input 
                         type="text" 
@@ -57,15 +62,18 @@ function Alias() {
                         required 
                     />
                 </label>
-                
+
+                {/* Submit Button */}
                 <div>
                     <button className="red" type="submit">Submit</button>
                 </div>
                 <br />
             </form>
-            
+
+            {/* Error message */}
             {error && <button style={{ color: 'red' }}>{error}</button>}
 
+            {/* Display ShortURL and copy option */}
             {shortUrl && (
                 <button 
                     onClick={handleCopy}

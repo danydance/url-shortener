@@ -57,7 +57,7 @@ form {
   gap: $ruler * 2; // space between forms
   justify-content: center;
   align-items: flex-start;
-  flex-wrap: wrap; // optional: allows wrapping on smaller screens
+  flex-wrap: wrap; 
 }
 
 button, input {
