@@ -20,6 +20,7 @@ A simple web application that allows users to shorten URLs and redirect using cu
 - Microsoft Entity Framework Core
 - SQL Server
 - Swagger
+- xUnit
 
 ### Frontend:
 - React
@@ -28,38 +29,52 @@ A simple web application that allows users to shorten URLs and redirect using cu
 
 ---
 
-## 📦 Installation
+## Installation
 
 
 ### Backend Setup
 
-1. Clone the repository and open the backend project in Visual Studio.
-2. Configure the connection string to your SQL Server in `appsettings.json`.
-3. Run the following commands to create and apply the database:
-    - dotnet ef migrations add InitialCreate
-    - dotnet ef database update
-    - dotnet add package xunit ******************************************
-    - dotnet add package xunit.runner.visualstudio -----------------------------
-    - dotnet add package Microsoft.EntityFrameworkCore.InMemory -------------------------------------
-    - dotnet add package Newtonsoft.Json --version 13.0.3
+1. Install [.NET SDK](https://dotnet.microsoft.com/en-us/download)
+2. Optional: Install EF Core CLI tools (if not already):
+   ```bash
+    dotnet tool install --global dotnet-ef
+2. In the terminal:
+    ```bash
+    cd backend
+    dotnet ef database update
+    dotnet watch run
 
 
 ### Frontend Setup
 
-## 📸 Screenshots
+1. Install [Node.js](https://nodejs.org/en)
+2. In the terminal:
+   ```bash
+    cd frontend
+    npm install
+    npm run dev
+
+## Running Tests
+
+1. Navigate to the test project folder:
+    In the terminal:
+    - cd UrlServices.Tests
+    - dotnet test
+
+## Screenshots
 
 - Frontend
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
+![URL Shortener Page](image.png)
+![URL Shortening Action](image-1.png)
+![Alias Page](image-2.png)
+![Alias Action](image-3.png)
 
 - Swagger
-![alt text](image-4.png)
+![Swagger UI](image-4.png)
 
 ---
 
-## 📚 Resources & Inspiration
+## Resources & Inspiration
 
 - [FreeFrontend - CSS Forms](https://freefrontend.com/css-forms/)  
   _Used a CSS template to enhance the UI._
@@ -81,26 +96,3 @@ A simple web application that allows users to shorten URLs and redirect using cu
 
 ---
 
-
-
-2. Microsoft entity
-3. sql server and sql server management studio
-
-
-
-
-FrontEnd:
-1. vite + npm install
-    * when you install vite and npm, in the CLI you need to type this command *npm install*
-    * for the scss you need to write this command *npm install -D sass*
-    and to run the frontend you need to type npm run dev
-
-
-
-videos and websites that helped me create this application:
-
-https://freefrontend.com/css-forms/ - Used a CSS template to make the website look nice :)
-
-The youtuber Teddy Smith(The ASP.NET Core Web API playlist) - Explained how to use the ASP.NET Web
-https://www.youtube.com/watch?v=Cg3XIqs_-4c - Explaied the system design of shoretened url and the logic behind it
-https://www.youtube.com/watch?v=2UoA_PoEvuA&t=260s - Shows how to create a shortened url backend with swagger api and database
