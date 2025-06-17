@@ -18,7 +18,7 @@ A simple web application that allows users to shorten URLs and redirect using cu
 ### Backend:
 - ASP.NET Core Web API
 - Microsoft Entity Framework Core
-- SQL Server
+- SQL Server(Now SQLite for portability)
 - Swagger
 - xUnit
 
