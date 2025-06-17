@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MRz/Hi6l2Y8=",
+  "dgSpecHash": "JFzT+wiDDp497SzPRDloEFtmpRyaielw7uIunmaanIKHxj+eZz5ssxgWVjFFPJn5+FYdZoggM83ddmDwNUjOxQ==",
   "success": true,
   "projectFilePath": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\UrlServices.Tests\\UrlServices.Tests.csproj",
   "expectedPackageFiles": [
@@ -112,10 +112,7 @@
     "C:\\Users\\dbeck\\.nuget\\packages\\xunit.core\\2.9.3\\xunit.core.2.9.3.nupkg.sha512",
     "C:\\Users\\dbeck\\.nuget\\packages\\xunit.extensibility.core\\2.9.3\\xunit.extensibility.core.2.9.3.nupkg.sha512",
     "C:\\Users\\dbeck\\.nuget\\packages\\xunit.extensibility.execution\\2.9.3\\xunit.extensibility.execution.2.9.3.nupkg.sha512",
-    "C:\\Users\\dbeck\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.3\\xunit.runner.visualstudio.2.5.3.nupkg.sha512",
-    "C:\\Users\\dbeck\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.17\\microsoft.netcore.app.ref.8.0.17.nupkg.sha512",
-    "C:\\Users\\dbeck\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.17\\microsoft.windowsdesktop.app.ref.8.0.17.nupkg.sha512",
-    "C:\\Users\\dbeck\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.17\\microsoft.aspnetcore.app.ref.8.0.17.nupkg.sha512"
+    "C:\\Users\\dbeck\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.3\\xunit.runner.visualstudio.2.5.3.nupkg.sha512"
   ],
   "logs": []
 }
