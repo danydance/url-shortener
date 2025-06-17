@@ -58,8 +58,9 @@ A simple web application that allows users to shorten URLs and redirect using cu
 
 1. Navigate to the test project folder:
     In the terminal:
-    - cd UrlServices.Tests
-    - dotnet test
+    ```bash
+    cd UrlServices.Tests
+    dotnet test
 
 ## Screenshots
 
