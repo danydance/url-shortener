@@ -38,6 +38,11 @@ A simple web application that allows users to shorten URLs and redirect using cu
 3. Run the following commands to create and apply the database:
     - dotnet ef migrations add InitialCreate
     - dotnet ef database update
+    - dotnet add package xunit ******************************************
+    - dotnet add package xunit.runner.visualstudio -----------------------------
+    - dotnet add package Microsoft.EntityFrameworkCore.InMemory -------------------------------------
+    - dotnet add package Newtonsoft.Json --version 13.0.3
+
 
 ### Frontend Setup
 
@@ -58,7 +63,7 @@ A simple web application that allows users to shorten URLs and redirect using cu
 - [FreeFrontend - CSS Forms](https://freefrontend.com/css-forms/)  
   _Used a CSS template to enhance the UI._
   
-- [Teddy Smith - ASP.NET Core Web API Playlist](https://www.youtube.com/)  
+- [Teddy Smith - ASP.NET Core Web API Playlist + Unit Testing](https://www.youtube.com/@TeddySmithDev)  
   _Helped with backend API structure and setup._
 
 - [System Design: URL Shortener](https://www.youtube.com/watch?v=Cg3XIqs_-4c)  

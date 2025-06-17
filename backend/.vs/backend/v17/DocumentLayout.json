@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0B5213DA-6F64-4E27-A527-EA17CB0816B0}|UrlServices.Tests\\UrlServices.Tests.csproj|w:\\inandout\\url shortener\\url-shortener\\backend\\urlservices.tests\\aliastests\\aliasservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B5213DA-6F64-4E27-A527-EA17CB0816B0}|UrlServices.Tests\\UrlServices.Tests.csproj|solutionrelative:urlservices.tests\\aliastests\\aliasservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|w:\\inandout\\url shortener\\url-shortener\\backend\\backend\\services\\redirectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|solutionrelative:backend\\services\\redirectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|w:\\inandout\\url shortener\\url-shortener\\backend\\backend\\services\\aliasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|solutionrelative:backend\\services\\aliasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B5213DA-6F64-4E27-A527-EA17CB0816B0}|UrlServices.Tests\\UrlServices.Tests.csproj|w:\\inandout\\url shortener\\url-shortener\\backend\\urlservices.tests\\redirecttests\\redirectservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B5213DA-6F64-4E27-A527-EA17CB0816B0}|UrlServices.Tests\\UrlServices.Tests.csproj|solutionrelative:urlservices.tests\\redirecttests\\redirectservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|w:\\inandout\\url shortener\\url-shortener\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B5213DA-6F64-4E27-A527-EA17CB0816B0}|UrlServices.Tests\\UrlServices.Tests.csproj|w:\\inandout\\url shortener\\url-shortener\\backend\\urlservices.tests\\urlshorteningtests\\urlshorteningservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B5213DA-6F64-4E27-A527-EA17CB0816B0}|UrlServices.Tests\\UrlServices.Tests.csproj|solutionrelative:urlservices.tests\\urlshorteningtests\\urlshorteningservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B5213DA-6F64-4E27-A527-EA17CB0816B0}|UrlServices.Tests\\UrlServices.Tests.csproj|w:\\inandout\\url shortener\\url-shortener\\backend\\urlservices.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B5213DA-6F64-4E27-A527-EA17CB0816B0}|UrlServices.Tests\\UrlServices.Tests.csproj|solutionrelative:urlservices.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|w:\\inandout\\url shortener\\url-shortener\\backend\\backend\\services\\urlshortningservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|solutionrelative:backend\\services\\urlshortningservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|w:\\inandout\\url shortener\\url-shortener\\backend\\backend\\urlsdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|solutionrelative:backend\\urlsdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|w:\\inandout\\url shortener\\url-shortener\\backend\\backend\\models\\shortenurlrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|solutionrelative:backend\\models\\shortenurlrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|w:\\inandout\\url shortener\\url-shortener\\backend\\backend\\models\\aliasrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,24 +51,8 @@
       "RelativeMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|solutionrelative:backend\\extensions\\migrationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|w:\\inandout\\url shortener\\url-shortener\\backend\\backend\\urlsdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|solutionrelative:backend\\urlsdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|w:\\inandout\\url shortener\\url-shortener\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|w:\\inandout\\url shortener\\url-shortener\\backend\\backend\\entities\\shortenedurl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|solutionrelative:backend\\entities\\shortenedurl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|w:\\inandout\\url shortener\\url-shortener\\backend\\backend\\models\\shortenurlrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|solutionrelative:backend\\models\\shortenurlrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|w:\\inandout\\url shortener\\url-shortener\\backend\\backend\\services\\urlshortningservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11D50EC6-5E00-4020-AAAF-713735DB61CB}|backend\\backend.csproj|solutionrelative:backend\\services\\urlshortningservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,67 +62,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AliasRequest.cs",
-              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Models\\AliasRequest.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\AliasRequest.cs",
-              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Models\\AliasRequest.cs",
-              "RelativeToolTip": "backend\\Models\\AliasRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAdAAAA",
+              "DocumentIndex": 0,
+              "Title": "AliasServiceTests.cs",
+              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\UrlServices.Tests\\AliasTests\\AliasServiceTests.cs",
+              "RelativeDocumentMoniker": "UrlServices.Tests\\AliasTests\\AliasServiceTests.cs",
+              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\UrlServices.Tests\\AliasTests\\AliasServiceTests.cs",
+              "RelativeToolTip": "UrlServices.Tests\\AliasTests\\AliasServiceTests.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowDAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T15:07:01.845Z"
+              "WhenOpened": "2025-06-17T12:34:22.917Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\appsettings.json",
-              "RelativeDocumentMoniker": "backend\\appsettings.json",
-              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\appsettings.json",
-              "RelativeToolTip": "backend\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-14T15:13:32.661Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ShortenedUrl.cs",
-              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Entities\\ShortenedUrl.cs",
-              "RelativeDocumentMoniker": "backend\\Entities\\ShortenedUrl.cs",
-              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Entities\\ShortenedUrl.cs",
-              "RelativeToolTip": "backend\\Entities\\ShortenedUrl.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAiAAAA",
+              "DocumentIndex": 3,
+              "Title": "RedirectServiceTests.cs",
+              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\UrlServices.Tests\\RedirectTests\\RedirectServiceTests.cs",
+              "RelativeDocumentMoniker": "UrlServices.Tests\\RedirectTests\\RedirectServiceTests.cs",
+              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\UrlServices.Tests\\RedirectTests\\RedirectServiceTests.cs",
+              "RelativeToolTip": "UrlServices.Tests\\RedirectTests\\RedirectServiceTests.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwD0AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T17:40:23.06Z"
+              "WhenOpened": "2025-06-17T12:34:02.015Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ShortenUrlRequest.cs",
-              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Models\\ShortenUrlRequest.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\ShortenUrlRequest.cs",
-              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Models\\ShortenUrlRequest.cs",
-              "RelativeToolTip": "backend\\Models\\ShortenUrlRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAcAAAA",
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\UrlServices.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "UrlServices.Tests\\UnitTest1.cs",
+              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\UrlServices.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "UrlServices.Tests\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T17:39:52.628Z"
+              "WhenOpened": "2025-06-17T12:25:51.836Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MigrationExtensions.cs",
-              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Extensions\\MigrationExtensions.cs",
-              "RelativeDocumentMoniker": "backend\\Extensions\\MigrationExtensions.cs",
-              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Extensions\\MigrationExtensions.cs",
-              "RelativeToolTip": "backend\\Extensions\\MigrationExtensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Program.cs",
+              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Program.cs",
+              "RelativeToolTip": "backend\\Program.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFkAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T14:17:17.843Z"
+              "WhenOpened": "2025-06-17T11:14:05.152Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -112,33 +124,119 @@
               "RelativeDocumentMoniker": "backend\\Services\\UrlShortningService.cs",
               "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Services\\UrlShortningService.cs",
               "RelativeToolTip": "backend\\Services\\UrlShortningService.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAIAwwCkAAAA3AAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwB0AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T13:55:37.867Z"
+              "WhenOpened": "2025-06-17T10:45:36.083Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "UrlShorteningServiceTests.cs",
+              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\UrlServices.Tests\\UrlShorteningTests\\UrlShorteningServiceTests.cs",
+              "RelativeDocumentMoniker": "UrlServices.Tests\\UrlShorteningTests\\UrlShorteningServiceTests.cs",
+              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\UrlServices.Tests\\UrlShorteningTests\\UrlShorteningServiceTests.cs",
+              "RelativeToolTip": "UrlServices.Tests\\UrlShorteningTests\\UrlShorteningServiceTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T11:15:58.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "UrlsDB.cs",
               "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\UrlsDB.cs",
               "RelativeDocumentMoniker": "backend\\UrlsDB.cs",
               "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\UrlsDB.cs",
               "RelativeToolTip": "backend\\UrlsDB.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T13:47:44.65Z"
+              "WhenOpened": "2025-06-17T11:14:15.189Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "backend\\Program.cs",
-              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Program.cs",
-              "RelativeToolTip": "backend\\Program.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAADwv3kAAAAvAAAA",
+              "DocumentIndex": 9,
+              "Title": "ShortenUrlRequest.cs",
+              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Models\\ShortenUrlRequest.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\ShortenUrlRequest.cs",
+              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Models\\ShortenUrlRequest.cs",
+              "RelativeToolTip": "backend\\Models\\ShortenUrlRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T09:59:55.716Z",
+              "WhenOpened": "2025-06-17T11:13:49.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AliasRequest.cs",
+              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Models\\AliasRequest.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\AliasRequest.cs",
+              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Models\\AliasRequest.cs",
+              "RelativeToolTip": "backend\\Models\\AliasRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T11:13:48.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MigrationExtensions.cs",
+              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Extensions\\MigrationExtensions.cs",
+              "RelativeDocumentMoniker": "backend\\Extensions\\MigrationExtensions.cs",
+              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Extensions\\MigrationExtensions.cs",
+              "RelativeToolTip": "backend\\Extensions\\MigrationExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T11:13:37.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ShortenedUrl.cs",
+              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Entities\\ShortenedUrl.cs",
+              "RelativeDocumentMoniker": "backend\\Entities\\ShortenedUrl.cs",
+              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Entities\\ShortenedUrl.cs",
+              "RelativeToolTip": "backend\\Entities\\ShortenedUrl.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T11:13:31.826Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AliasService.cs",
+              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Services\\AliasService.cs",
+              "RelativeDocumentMoniker": "backend\\Services\\AliasService.cs",
+              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Services\\AliasService.cs",
+              "RelativeToolTip": "backend\\Services\\AliasService.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA5wCkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T12:09:23.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RedirectService.cs",
+              "DocumentMoniker": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Services\\RedirectService.cs",
+              "RelativeDocumentMoniker": "backend\\Services\\RedirectService.cs",
+              "ToolTip": "W:\\InAndOut\\URL Shortener\\url-shortener\\backend\\backend\\Services\\RedirectService.cs",
+              "RelativeToolTip": "backend\\Services\\RedirectService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T11:36:09.512Z",
               "EditorCaption": ""
             }
           ]
