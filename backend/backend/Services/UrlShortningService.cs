@@ -13,48 +13,35 @@ namespace backend.Services
     {
         public const int ShortLinkLength = 6; // The length of the short link chars 
 
+        // The characters used to generate the short link code
         private const string Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
+        // Random number generator to create unique short codes
         private readonly Random _random = new();
 
+        // The database context for accessing the shortened URLs
         private readonly UrlsDB _dbContext;
         public UrlShortningService(UrlsDB dbcontext)
         {
             _dbContext = dbcontext;
         }
-        public async Task<string> GenerateUniqCode()
-        {
-            var codeChars = new char[ShortLinkLength];
-            while (true)
-            {
-                for (var i = 0; i < ShortLinkLength; i++)
-                {
-                    int randomIndex = _random.Next(Alphabet.Length - 1);
-
-                    codeChars[i] = Alphabet[randomIndex];
-                }
-
-                var code = new string(codeChars);
-
-                if (!await _dbContext.ShortenedUrls.AnyAsync(s => s.Code == code))
-                {
-                    return code;
-                }
-            }
-        }
+        /// <summary>
+        /// Returns an existing short code for the given long URL,
+        /// or generates a new unique code if one doesn't exist.
+        /// </summary>
         public async Task<string> GetOrCreateCodeForUrl(string longUrl)
         {
-            // 1. Check if the long URL already has a short code in the DB
+            // Check if the long URL already has an associated short code
             var existingEntry = await _dbContext.ShortenedUrls
                 .FirstOrDefaultAsync(s => s.LongUrl == longUrl);
 
             if (existingEntry != null)
             {
-                // Return the existing short code
+                // If found, return the existing code
                 return existingEntry.Code;
             }
 
-            // 2. If not found, generate a new unique code
+            // If not found, generate a new unique code
             var codeChars = new char[ShortLinkLength];
             while (true)
             {
@@ -68,9 +55,10 @@ namespace backend.Services
 
                 if (!await _dbContext.ShortenedUrls.AnyAsync(s => s.Code == code))
                 {
-                    // Optionally: save the new code and URL here, or let caller do it
+                    // Return the new unique code
                     return code;
                 }
+                // If not unique, loop again to try another random code
             }
         }
 
