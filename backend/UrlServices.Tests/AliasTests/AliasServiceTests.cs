@@ -14,6 +14,7 @@ namespace UrlServices.Tests.AliasTests
 {
     public class AliasServiceTests
     {
+        /// Creates a new database context for testing purposes.
         private UrlsDB GetInMemoryDbContext()
         {
             var options = new DbContextOptionsBuilder<UrlsDB>()
@@ -23,6 +24,7 @@ namespace UrlServices.Tests.AliasTests
             return new UrlsDB(options);
         }
 
+        /// Mocks/Fakes an HTTP context with a basic localhost request setup.
         private DefaultHttpContext GetMockHttpContext()
         {
             return new DefaultHttpContext
@@ -35,6 +37,7 @@ namespace UrlServices.Tests.AliasTests
             };
         }
 
+        /// Test: alias is created when it does not already exist in the database.
         [Fact]
         public async Task CreateOrChecksAlias_CreatesNewAlias_WhenNotExists()
         {
@@ -48,9 +51,10 @@ namespace UrlServices.Tests.AliasTests
             var result = await service.CreateOrChecksAlias(request, httpContext);
 
             // Assert
-            Assert.IsType<Ok<string>>(result);
+            Assert.IsType<Ok<string>>(result); // Should return 200 OK
         }
 
+        /// Test: alias creation fails if the alias is already used for a different URL.
         [Fact]
         public async Task CreateOrChecksAlias_ReturnsBadRequest_WhenAliasTakenByOtherUrl()
         {
@@ -72,9 +76,10 @@ namespace UrlServices.Tests.AliasTests
 
             var result = await service.CreateOrChecksAlias(request, httpContext);
 
-            Assert.IsType<BadRequest<string>>(result);
+            Assert.IsType<BadRequest<string>>(result); // Should return 400 Bad Request
         }
 
+        /// Test: alias creation fails when the provided URL is not valid.
         [Fact]
         public async Task CreateOrChecksAlias_ReturnsBadRequest_WhenUrlIsInvalid()
         {
@@ -85,7 +90,7 @@ namespace UrlServices.Tests.AliasTests
 
             var result = await service.CreateOrChecksAlias(request, httpContext);
 
-            Assert.IsType<BadRequest<string>>(result);
+            Assert.IsType<BadRequest<string>>(result); // Should return 400 Bad Request
         }
     }
 }

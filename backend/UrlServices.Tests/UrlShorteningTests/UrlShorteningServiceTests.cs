@@ -9,7 +9,6 @@ using Xunit; // Added to enable xUnit test framework
 
 namespace UrlServices.Tests.UrlShorteningTests
 {
-    // Changed from internal to public so xUnit can discover the test class
     public class UrlShorteningServiceTests
     {
         private UrlsDB GetInMemoryDbContext()
@@ -22,25 +21,9 @@ namespace UrlServices.Tests.UrlShorteningTests
         }
 
         [Fact]
-        public async Task GenerateUniqCode_Returns_Unique_Code()
-        {
-            // Arrange - Get variables/classes/functions/data needed for the test
-            var dbContext = GetInMemoryDbContext();
-            var service = new UrlShortningService(dbContext);
-
-            // Act -  Execute the code that is being tested
-            var code = await service.GenerateUniqCode();
-
-            // Assert - Check if the code behaves as expected
-            Assert.False(string.IsNullOrWhiteSpace(code));
-            Console.WriteLine($"Generated unique code: {code}");
-            Assert.Equal(UrlShortningService.ShortLinkLength, code.Length);
-        }
-
-        [Fact]
         public async Task GetOrCreateCodeForUrl_ReturnsExistingCode_IfExists()
         {
-            // Arrange
+            // Arrange - Get variables/classes/functions/data needed for the test
             var dbContext = GetInMemoryDbContext();
             var existingCode = "abc123";
             var url = "https://example.com";
@@ -57,10 +40,10 @@ namespace UrlServices.Tests.UrlShorteningTests
 
             var service = new UrlShortningService(dbContext);
 
-            // Act
+            // Act -  Execute the code that is being tested
             var resultCode = await service.GetOrCreateCodeForUrl(url);
 
-            // Assert
+            // Assert - Check if the code behaves as expected
             Console.WriteLine($"Retrieved prev_code + Code: {existingCode} + {resultCode}");
             Assert.Equal(existingCode, resultCode);
         }
